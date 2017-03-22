@@ -65,7 +65,7 @@
       
         <div class="avatar">
           
-            <a href="/about"><img src="https://cn.gravatar.com/avatar/35fef74d731255cd569c2c2b0b9e87e4?s=200"></a>
+            <a href="/about"><img src="http://i2.pixiv.net/c/600x600/img-master/img/2013/08/12/00/37/34/37736449_p0_master1200.jpg"></a>
           
         </div>
       
@@ -79,21 +79,21 @@
             
               <li class="category-list-container">
                 <a href="javascript:;">Category</a>
-                
+                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/数据挖掘经典算法/">数据挖掘经典算法</a><span class="category-list-count">2</span></li></ul>
               </li>
             
           
             
               <li class="tag-list-container">
                 <a href="javascript:;">Tag</a>
-                
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据挖掘-Apriori/">数据挖掘->Apriori</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据挖掘-ID3/">数据挖掘->ID3</a><span class="tag-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="archive-list-container">
                 <a href="javascript:;">Archive</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a><span class="archive-list-count">1</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a><span class="archive-list-count">2</span></li></ul>
               </li>
             
           
@@ -125,7 +125,7 @@
           
             
               <li>
-                <a href="https://github.com/denjones" title="Github" target="_blank" rel="external">Github</a>
+                <a href="https://github.com/LargeHaoCong" title="Github" target="_blank" rel="external">Github</a>
               </li>
             
           
@@ -162,35 +162,640 @@
 
     <div class="post-list-item article">
       <h3 class="article-header">
-        <a href="/2017/03/07/hello-world/" >
-  Hello World
+        <a href="/2017/03/22/Day2/" >
+  Day2
 </a>
 
       </h3>
       
 
       <div class="article-info">
-        <a href="/2017/03/07/hello-world/"><span class="article-date">
-  2017-03-07
+        <a href="/2017/03/22/Day2/"><span class="article-date">
+  2017-03-22
 </span>
 </a>
         
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/数据挖掘经典算法/">数据挖掘经典算法</a></li></ul>
+	</span>
+
 
         
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据挖掘-Apriori/">数据挖掘->Apriori</a></li></ul>
+	</span>
+
 
       </div>
       <div class="article-entry">
         
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+          <h1 id="Apriori算法头文件h"><a href="#Apriori算法头文件h" class="headerlink" title="Apriori算法头文件h"></a>Apriori算法头文件h</h1><pre><code>#pragma once
+#ifndef APRIORI
+#define APRIORI
+/*☆*°☆*°(∩^o^)~━━ 2017/03/08  13:04
+                                  Apriori.h
+               (ˉ▽￣～) ~~ 一捆好葱 (*˙︶˙*)☆*°
+               Fuction：频繁项集算法√ ━━━━━☆*°☆*°*/
+#include &lt;iostream&gt;
+#include&lt;string&gt;
+#include&lt;vector&gt;
+#include&lt;map&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+class Apriori {
+public:
+    Apriori(size_t  is = 0, unsigned int mv = 0) {
+        item_size = is;
+        min_value = mv; 
+    }
+    void getItem();
+    map&lt;vector&lt;string&gt;, unsigned int&gt;find_freitem();
+    map&lt;vector&lt;string&gt;, unsigned int&gt;apri_gen(unsigned int K, map&lt;vector&lt;string&gt;, unsigned int&gt;K_item);
+    void showAprioriItem(unsigned int K, map&lt;vector&lt;string&gt;, unsigned int&gt;showmap);
+private:
+    map&lt;int,vector&lt;string&gt;&gt;item;
+    map&lt;vector&lt;string&gt;, unsigned int&gt;K_item;
+    size_t  item_size;
+    unsigned int min_value;
+};
 
+void Apriori::getItem() {
+    int ci = item_size;
+    for (int i = 0; i &lt; ci; i++) {
+        string str;
+        vector&lt;string&gt;temp;
+        cout &lt;&lt; &quot;请输入第  &quot; &lt;&lt; i + 1 &lt;&lt; &quot; 个事务的项集(123 end)：&quot;;
+        while (cin &gt;&gt; str &amp;&amp; str!=&quot;123&quot;) {
+            temp.push_back(str);
+        }
+        sort(temp.begin(), temp.end());
+        pair&lt;map&lt;int, vector&lt;string&gt;&gt;::iterator, bool&gt;ret = item.insert(make_pair(i+1,temp));
+        if (!ret.second) {
+            --i;
+            cout &lt;&lt; &quot;你输入的元素已存在！请重新输入！&quot; &lt;&lt; endl;
+        }
+    }
+    cout &lt;&lt; &quot;———————————运行结果如下：——————————&quot; &lt;&lt; endl;
+}
+
+map&lt;vector&lt;string&gt;, unsigned int&gt;Apriori::find_freitem() {
+    unsigned int i = 1;
+    bool isEmpty = false;
+    map&lt;int,vector&lt;string&gt;&gt;::iterator mit;
+    for (mit = item.begin(); mit != item.end(); mit++) {
+        vector&lt;string&gt;vec = mit-&gt;second;
+        if (vec.size() != 0)//有待斟酌
+            break;
+    }
+    if (mit == item.end()) {
+        isEmpty = true;
+        cout &lt;&lt; &quot;事务集为空！程序无法进行...&quot; &lt;&lt; endl;
+        map&lt;vector&lt;string&gt;, unsigned int&gt;empty;
+        return empty;
+    }
+    while (1) {
+        map&lt;vector&lt;string&gt;, unsigned int&gt;K_itemTemp = K_item;
+        K_item = apri_gen(i++,K_item);
+        if (K_item == K_itemTemp) {
+            i = UINT_MAX;
+            break;
+        }
+        map&lt;vector&lt;string&gt;, unsigned int&gt;pre_K_item = K_item;
+        size_t  Kitemsize = K_item.size();
+        if (Kitemsize != 1 &amp;&amp; i != 1) {
+            vector&lt;map&lt;vector&lt;string&gt;, unsigned int&gt;::iterator &gt; eraseVecMit;
+            map&lt;vector&lt;string&gt;, unsigned int&gt;::iterator pre_K_item_it1 = pre_K_item.begin(), pre_K_item_it2;
+            while (pre_K_item_it1 != pre_K_item.end()) {
+                map&lt;vector&lt;string&gt;, unsigned int&gt;::iterator mit = pre_K_item_it1;
+                bool isExist = true;
+                vector&lt;string&gt;vec1;
+                vec1 = pre_K_item_it1-&gt;first;
+                vector&lt;string&gt;vec11(vec1.begin(), vec1.end() - 1);
+                while (mit != pre_K_item.end()) {
+                    vector&lt;string &gt;vec2;
+                    vec2 = mit-&gt;first;
+                    vector&lt;string&gt;vec22(vec2.begin(), vec2.end() - 1);
+                    if (vec11 == vec22)
+                        break;//√原书中出现错误，是由于mit无加1
+                    ++mit;
+                }
+                if (mit == pre_K_item.end()) {
+                    isExist = false;
+                }
+                if (!isExist&amp;&amp;pre_K_item_it1 != pre_K_item.end()) {
+                    eraseVecMit.push_back(pre_K_item_it1);
+                }
+                ++pre_K_item_it1;
+            }
+            size_t eraseSetSize = eraseVecMit.size();
+            if (eraseSetSize == Kitemsize)
+                break;
+            else {
+                vector&lt;map&lt;vector&lt;string&gt;, unsigned int&gt;::iterator&gt;::iterator currentErs = eraseVecMit.begin();
+                while (currentErs != eraseVecMit.end()) {
+                    map&lt;vector&lt;string&gt;, unsigned int&gt;::iterator eraseMit = *currentErs;
+                    K_item.erase(eraseMit);
+                    ++currentErs;
+                }
+            }
+        }
+        else
+            if (Kitemsize == 1)
+                break;
+    }
+    cout &lt;&lt; endl;
+    showAprioriItem(i, K_item);
+    return K_item;
+}
+
+map&lt;vector&lt;string&gt;, unsigned int&gt;Apriori::apri_gen(unsigned int K, map&lt;vector&lt;string&gt;, unsigned int&gt;K_item) {
+
+    if (1 == K) {
+        size_t c1 = item_size;
+        map&lt;int, vector&lt;string&gt;&gt;::iterator mapit = item.begin();
+        vector&lt;string&gt;vec;
+        map&lt;string, unsigned int&gt;c1_itemtemp;
+        while (mapit != item.end()) {
+            vector&lt;string&gt;temp = mapit-&gt;second;
+            vector&lt;string&gt;::iterator vecit = temp.begin();
+            while (vecit != temp.end()) {
+                pair&lt;map&lt;string, unsigned int&gt;::iterator, bool&gt;ret = c1_itemtemp.insert(make_pair(*vecit++, 1));
+                if (!ret.second) {
+                    ++ret.first-&gt;second;
+                }
+            }
+            ++mapit;
+        }
+        map&lt;string, unsigned int&gt;::iterator item_it = c1_itemtemp.begin();
+        map&lt;vector&lt;string&gt;, unsigned int&gt;c1_item;
+        while (item_it != c1_itemtemp.end()) {
+            vector&lt;string&gt;temp;
+            if (item_it-&gt;second &gt;= min_value) {
+                temp.push_back(item_it-&gt;first);
+                c1_item.insert(make_pair(temp, item_it-&gt;second));
+            }
+            ++item_it;
+        }
+        return c1_item;
+    }
+    else {
+        cout &lt;&lt; endl;
+        showAprioriItem(K - 1, K_item);
+        map&lt;vector&lt;string&gt;, unsigned int&gt;::iterator ck_item_it1 = K_item.begin(), ck_item_it2;
+        map&lt;vector&lt;string&gt;, unsigned int&gt;ck_item;
+        while (ck_item_it1 != K_item.end()) {
+            ck_item_it2 = ck_item_it1;
+            ++ck_item_it2;
+            map&lt;vector&lt;string&gt;, unsigned int&gt;::iterator mit = ck_item_it2;
+            while (mit != K_item.end()) {
+                vector&lt;string&gt;vec, vec1, vec2;
+                vec1 = ck_item_it1-&gt;first;
+                vec2 = mit-&gt;first;
+                vector&lt;string&gt;::iterator vit1, vit2;
+
+                vit1 = vec1.begin();
+                vit2 = vec2.begin();
+                while (vit1 &lt; vec1.end() &amp;&amp; vit2 &lt; vec2.end()) {
+                    string str1 = *vit1;
+                    string str2 = *vit2;
+                    ++vit1;
+                    ++vit2;
+                    if (K == 2 || str1 == str2) {
+                        if (vit1 != vec1.end() &amp;&amp; vit2 != vec2.end()) {
+                            vec.push_back(str1);
+                        }
+                    }
+                    else {
+                        break;
+                    }
+                }
+                if (vit1 == vec1.end() &amp;&amp; vit2 == vec2.end()) {
+                    --vit1;
+                    --vit2;
+                    string str1 = *vit1;
+                    string str2 = *vit2;
+                    if (str1 &gt; str2) {
+                        vec.push_back(str2);
+                        vec.push_back(str1);
+                    }
+                    else {
+                        vec.push_back(str1);
+                        vec.push_back(str2);
+                    }
+                    map&lt;int, vector&lt;string&gt;&gt;::iterator base_item = item.begin();
+                    unsigned int Acount = 0;
+                    while (base_item != item.end()) {
+                        unsigned int _count = 0, mincount = UINT_MAX;
+                        vector&lt;string&gt;vv = base_item-&gt;second;
+                        vector&lt;string&gt;::iterator vecit, bvit;
+                        for (vecit = vec.begin(); vecit &lt; vec.end(); vecit++) {
+                            string t = *vecit;
+                            _count = 0;
+                            for (bvit = vv.begin(); bvit &lt; vv.end(); bvit++) {
+                                if (t == *bvit)
+                                    _count++;
+                            }
+                            mincount = (_count &lt; mincount ? _count : mincount);
+                        }
+                        if (mincount &gt;= 1 &amp;&amp; mincount != UINT_MAX)
+                            Acount += mincount;
+                        ++base_item;
+                    }
+                    if (Acount &gt;= min_value &amp;&amp; Acount != 0) {
+                        sort(vec.begin(), vec.end());
+                        pair&lt;map&lt;vector&lt;string&gt;, unsigned int&gt;::iterator, bool&gt;ret = ck_item.insert(make_pair(vec, Acount));
+                        if (!ret.second) {
+                            ret.first-&gt;second += Acount;
+                        }
+                    }
+                }
+                ++mit;
+            }
+            ++ck_item_it1;
+        }
+        if (ck_item.empty())
+            return K_item;
+        else
+            return ck_item;
+    }
+}
+
+void Apriori::showAprioriItem(unsigned int K, map&lt;vector&lt;string&gt;, unsigned int&gt;showmap) {
+    map&lt;vector&lt;string&gt;, unsigned int&gt;::iterator showit = showmap.begin();
+    if (K != UINT_MAX)
+        cout &lt;&lt; endl &lt;&lt; &quot;第 &quot; &lt;&lt; K &lt;&lt; &quot; 级频繁项集为：&quot; &lt;&lt; endl;
+    else
+        cout &lt;&lt; &quot;最终的频繁项集为：&quot; &lt;&lt; endl;
+    cout &lt;&lt; &quot;项  集&quot; &lt;&lt; &quot;\t&quot; &lt;&lt; &quot;频率&quot; &lt;&lt; endl;
+    while (showit != showmap.end()) {
+        vector&lt;string&gt;vec = showit-&gt;first;
+        vector&lt;string&gt;::iterator vecit = vec.begin();
+        cout &lt;&lt; &quot; {&quot;;
+        while (vecit != vec.end()) {
+            cout &lt;&lt; *vecit &lt;&lt; &quot; &quot;;
+            ++vecit;
+        }
+        cout &lt;&lt; &quot;}&quot; &lt;&lt; &quot;  \t  &quot;;
+        cout &lt;&lt; showit-&gt;second &lt;&lt; endl;
+        ++showit;
+    }
+}
+#endif // !APRIORI
+</code></pre><h1 id="Apriori主程序文件cpp"><a href="#Apriori主程序文件cpp" class="headerlink" title="Apriori主程序文件cpp"></a>Apriori主程序文件cpp</h1><pre><code>#include &quot;Apriori.h&quot;
+#include&lt;iostream&gt;
+#include&lt;string&gt;
+using namespace std;
+unsigned int parseNumber(const char * str) {
+    if (str == NULL) {
+        return 0;
+    }
+    else {
+        unsigned int num = 0;
+        size_t len = strlen(str);
+        for (size_t i = 0; i &lt; len; i++) {
+            num *= 10;
+            if (str[i] &gt;= &apos;0&apos; &amp;&amp; str[i] &lt;= &apos;9&apos;)
+                num += str[i] - &apos;0&apos;;
+            else
+                return 0;
+        }
+        return num;
+    }
+}
+
+void main() {
+    unsigned int itemsize = 0;
+    unsigned int min;
+    do {
+        cout &lt;&lt; &quot;请输入事务数：&quot;;
+        char *str = new char;
+        cin &gt;&gt; str;
+        itemsize = parseNumber(str);
+        if (itemsize == 0) {
+            cout &lt;&lt; &quot;请输入大于0正整数!&quot; &lt;&lt; endl;
+        }
+    } while (itemsize == 0);
+
+    do {
+        cout &lt;&lt; &quot;请输入最小阈值：&quot;;
+        char *str = new char;
+        cin &gt;&gt; str;
+        min = parseNumber(str);
+        if (min == 0) {
+            cout &lt;&lt; &quot;请输入大于0正整数！&quot; &lt;&lt; endl;
+        }
+    } while (min == 0);
+
+    Apriori a(itemsize, min);
+    a.getItem();
+    map&lt;vector&lt;string&gt;, unsigned int&gt;AprioriMap = a.find_freitem();
+    system(&quot;pause&quot;);
+
+}
+</code></pre>
+        
+      </div>
+    </div>
+
+  
+
+  
+  
+    
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2017/03/22/Hac/" >
+  Hac
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2017/03/22/Hac/"><span class="article-date">
+  2017-03-22
+</span>
+</a>
+        
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/数据挖掘经典算法/">数据挖掘经典算法</a></li></ul>
+	</span>
+
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据挖掘-ID3/">数据挖掘->ID3</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <p><em>*/</em>☆<em>°☆</em>°(∩^o^)~━━ 2017/03/11  20:05<br>                                  ID3源.cpp<br>               (ˉ▽￣～) ~~ 一捆好葱 (<em>˙︶˙</em>)☆<em>°<br>               Fuction： ID3算法初解  √ ━━━━━☆</em>°☆<em>°</em>/</p>
+<pre><code>#include&lt;iostream&gt;
+#include&lt;vector&gt;
+#include&lt;string&gt;
+#include&lt;map&gt;
+#include&lt;algorithm&gt;
+#include&lt;cmath&gt;
+using namespace std;
+#define  MAXLEN 6
+
+vector&lt;vector&lt;string&gt;&gt;state;
+vector&lt;string&gt;item(MAXLEN);
+vector&lt;string&gt;attribute_row;
+string end(&quot;end&quot;);
+string yes(&quot;yes&quot;);
+string no(&quot;no&quot;);
+string blank(&quot;&quot;);
+map&lt;string, vector&lt;string&gt;&gt;map_attribute_values;
+int tree_size = 0;
+struct Node {
+    string attribute;
+    string arrived_value;
+    vector&lt;Node *&gt;childs;
+    Node() {
+        attribute = blank;
+        arrived_value = blank;
+    }
+};
+Node * root;
+
+void ComputeMapFrom2DVector() {
+    unsigned int i, j, k;
+    bool existed = false;
+    vector&lt;string&gt;values;
+    for (i=1; i &lt; MAXLEN - 1; i++) {
+        for (j = 1; j &lt; state.size(); j++) {
+            for (k = 0; k &lt; values.size(); k++) {
+                if (!values[k].compare(state[j][i])) existed = true;
+            }
+            if (!existed) {
+                values.push_back(state[j][i]);
+            }
+            existed = false;
+        }
+        map_attribute_values[state[0][i]] = values;
+        values.erase(values.begin(), values.end());
+    }
+}
+
+double ComputeEntropy(vector&lt;vector&lt;string&gt;&gt;remain_state, string attribute, string value, bool ifparent) {
+    vector&lt;int&gt;_count(2, 0);
+    unsigned int i, j;
+    bool done_flag = false;
+    for (j = 1; j &lt; MAXLEN; j++) {
+        if (done_flag)break;
+        if (!attribute_row[j].compare(attribute)) {
+            for (i = 1; i &lt; remain_state.size(); i++) {
+                if ((!ifparent &amp;&amp; !remain_state[i][j].compare(value)) || ifparent) {
+                    if (!remain_state[i][MAXLEN - 1].compare(yes)) {
+                        _count[0]++;
+                    }
+                    else _count[1]++;
+                }
+            }
+            done_flag = true;
+        }
+    }
+    if (_count[0] == 0 || _count[1] == 0)
+    {
+        //cout &lt;&lt; &quot;A&quot; &lt;&lt; attribute &lt;&lt; endl &lt;&lt; &quot;v&quot; &lt;&lt; value &lt;&lt; endl;
+        return 0;
+    }
+    double sum = _count[0] + _count[1];
+    double entropy = -_count[0] / sum*log(_count[0] / sum) / log(2.0) - _count[1] / sum*log(_count[1] / sum) / log(2.0);
+    //cout &lt;&lt; entropy &lt;&lt; endl;
+    return entropy;
+}
+
+double ComputeGain(vector&lt;vector&lt;string&gt;&gt;remain_state, string attribute) {
+    unsigned int j, k, m;
+    cout &lt;&lt; attribute &lt;&lt; endl;
+    double parent_entropy = ComputeEntropy(remain_state, attribute, blank, true);
+    double children_entropy = 0;
+    vector&lt;string&gt;values = map_attribute_values[attribute];
+    vector&lt;double&gt;ratio;
+    vector&lt;int&gt;count_value;
+    int tempint;
+    for (m = 0; m &lt; values.size(); m++) {
+        tempint = 0;
+        for (k = 1; k &lt; MAXLEN - 1; k++) {
+            if (!attribute_row[k].compare(attribute)) {
+                for (j = 1; j &lt; remain_state.size(); j++) {
+                    if (!remain_state[j][k].compare(values[m])) {
+                        tempint++;
+                    }
+                }
+            }
+        }
+        count_value.push_back(tempint);
+        cout &lt;&lt; &quot;跟属性&quot; &lt;&lt; values[m] &lt;&lt; &quot;匹配的有&quot; &lt;&lt; tempint &lt;&lt; endl;
+    }
+    for (j = 0; j &lt; values.size(); j++) {
+        ratio.push_back((double)count_value[j]/(double)(remain_state.size()-1));
+        cout &lt;&lt; &quot;频率为&quot; &lt;&lt; (double)count_value[j] / (double)(remain_state.size() - 1) &lt;&lt; endl;
+    }
+    double temp_entropy;
+    for (j = 0; j &lt; values.size(); j++) {
+        temp_entropy = ComputeEntropy(remain_state, attribute, values[j], false);
+        cout &lt;&lt; temp_entropy &lt;&lt; endl;
+        cout&lt;&lt;ratio[j]&lt;&lt;&quot;*&quot;&lt;&lt;temp_entropy&lt;&lt;&quot;=&quot;&lt;&lt; ratio[j] * temp_entropy&lt;&lt;endl;
+        children_entropy += ratio[j] * temp_entropy;
+    }
+    cout &lt;&lt; &quot;parenty&quot; &lt;&lt; parent_entropy&lt;&lt;endl;
+    cout &lt;&lt; &quot;children&quot; &lt;&lt; children_entropy&lt;&lt;endl;
+    cout &lt;&lt; (parent_entropy - children_entropy)&lt;&lt;endl;
+    return (parent_entropy - children_entropy);
+}
+
+int FindAttriNumByName(string attri) {
+    for (int i = 0; i &lt; MAXLEN; i++) {
+        if (!state[0][i].compare(attri))return i;
+    }
+    cerr &lt;&lt; &quot;can&apos;t find the numth of attribute&quot; &lt;&lt; endl;
+    return 0;
+}
+
+string MostCommonLabel(vector&lt;vector&lt;string&gt;&gt;remain_state) {
+    int p = 0, n = 0;
+    for (unsigned int i = 0; i &lt; remain_state.size(); i++) {
+        if (!remain_state[i][MAXLEN - 1].compare(yes))p++;
+        else if (!remain_state[i][MAXLEN - 1].compare(no)) n++;
+    }
+    if (p &gt;n)return yes;
+    else if(p&lt;n)return no;
+    else return &quot;XX&quot;;
+}
+
+bool AllTheSameLabel(vector&lt;vector&lt;string&gt;&gt;remain_state, string label) {
+    int _count = 0;
+    for (unsigned int i = 0; i &lt; remain_state.size(); i++) {
+        if (!remain_state[i][MAXLEN - 1].compare(label))_count++;
+    }
+    if (_count == remain_state.size() - 1)return true;
+    else return false;
+}
+
+Node * BuildDecisionTreeDFS(Node *p, vector&lt;vector&lt;string&gt;&gt;remain_state, vector&lt;string&gt;remain_attribute) {
+    if (p == NULL)
+        p = new Node();
+    if (AllTheSameLabel(remain_state, yes)) {
+        p-&gt;attribute = yes;
+        return p;
+    }
+    if (AllTheSameLabel(remain_state, no)) {
+        p-&gt;attribute = no;
+        return p;
+    }
+    if (remain_attribute.size() == 0) {
+        string label = MostCommonLabel(remain_state);
+        p-&gt;attribute = label;
+        return p;
+    }
+    double max_gain = 0, temp_gain;
+    vector&lt;string&gt;::iterator max_it = remain_attribute.begin();
+    vector&lt;string&gt;::iterator it1;
+    for (it1 = remain_attribute.begin(); it1 &lt; remain_attribute.end(); it1++) {
+        temp_gain = ComputeGain(remain_state, (*it1));
+        if (temp_gain &gt; max_gain) {
+            max_gain = temp_gain;
+            max_it = it1;
+        }
+    }
+    vector&lt;string&gt;new_attribute;
+    vector&lt;vector&lt;string&gt;&gt;new_state;
+    for (vector&lt;string&gt;::iterator it2 = remain_attribute.begin(); it2 &lt; remain_attribute.end(); it2++) {
+        if ((*it2).compare(*max_it)) new_attribute.push_back(*it2);
+    }
+    p-&gt;attribute = *max_it;
+    vector&lt;string&gt;values = map_attribute_values[*max_it];
+    int attribute_num = FindAttriNumByName(*max_it);
+    new_state.push_back(attribute_row);
+    for (vector&lt;string&gt;::iterator it3 = values.begin(); it3 &lt; values.end(); it3++) {
+        for (unsigned int i = 1; i &lt; remain_state.size(); i++) {
+            if (!remain_state[i][attribute_num].compare(*it3)) {
+                new_state.push_back(remain_state[i]);
+            }
+        }
+        Node *new_node = new Node();
+        new_node-&gt;arrived_value = *it3;
+        if (new_state.size() == 1) { //!!!!
+            new_node-&gt;attribute = MostCommonLabel(remain_state);
+        }
+        else {
+            BuildDecisionTreeDFS(new_node, new_state, new_attribute);
+        }
+        p-&gt;childs.push_back(new_node);
+        new_state.erase(new_state.begin() + 1, new_state.end());
+    }
+    return p;
+}
+void input() {
+    string s;
+    string end(&quot;end&quot;);
+    while (cin &gt;&gt; s, s.compare(end) != 0) {
+        item[0] = s;
+        for (int i = 1; i &lt; MAXLEN; i++) {
+            cin &gt;&gt; item[i];
+        }
+        state.push_back(item);
+    }
+    for (int j = 0; j &lt; MAXLEN; j++) {
+        attribute_row.push_back(state[0][j]);
+    }
+}
+
+void PrintTree(Node *p, int depth) {
+    for (int i = 0; i &lt; depth; i++) cout &lt;&lt; &quot;\t&quot;;
+    if (!p-&gt;arrived_value.empty()) {
+        cout &lt;&lt; p-&gt;arrived_value &lt;&lt; endl;
+        for (int i = 0; i &lt; depth + 1; i++)cout &lt;&lt; &quot;\t&quot;;
+    }
+    cout &lt;&lt; p-&gt;attribute &lt;&lt; endl;
+    for (vector&lt;Node *&gt;::iterator it=(p-&gt;childs).begin(); it!= (p-&gt;childs).end(); it++) {
+        PrintTree(*it, depth + 1);
+    }
+}
+
+void FreeTree(Node *p) {
+    if (p == NULL) {
+        return;
+    }
+    for (vector&lt;Node *&gt;::iterator it = (p-&gt;childs).begin(); it != (p-&gt;childs).end(); it++) {
+        FreeTree(*it);
+    }
+    delete p;
+    tree_size++;
+}
+
+void main() {
+    input();
+    vector&lt;string&gt;remain_attribute;
+    string outlook(&quot;outlook&quot;);
+    string Temperature(&quot;temperature&quot;);
+    string Humidity(&quot;humidity&quot;);
+    string Wind(&quot;wind&quot;);
+    remain_attribute.push_back(outlook);
+    remain_attribute.push_back(Temperature);
+    remain_attribute.push_back(Humidity);
+    remain_attribute.push_back(Wind);
+    vector&lt;vector&lt;string&gt;&gt;remain_state;
+    for (unsigned int i = 0; i &lt; state.size(); i++) {
+        remain_state.push_back(state[i]);
+    }
+    ComputeMapFrom2DVector();
+    root = BuildDecisionTreeDFS(root, remain_state, remain_attribute);
+    cout &lt;&lt; &quot;the decision tree is：&quot; &lt;&lt; endl;
+    PrintTree(root, 0);
+    FreeTree(root);
+    cout &lt;&lt; endl;
+    cout &lt;&lt; &quot;Tree_size：&quot; &lt;&lt; tree_size &lt;&lt; endl;
+    system(&quot;pause&quot;);
+}
+</code></pre>
         
       </div>
     </div>
