@@ -245,9 +245,11 @@ body {
   width: 400px;
   height: 100%;
   overflow: hidden;
-  background-color: #333;
-  color: #fff;
+  background-color: #69f;
+  color: #f9ff00;
+  FONT-FAMILY: Comic Sans MS;
   text-align: right;
+  font-size: x-large;
 }
 .sidebar .header {
   padding-right: 30px;
@@ -265,30 +267,34 @@ body {
   font-size: 14px;
   margin-top: 5px;
   margin-bottom: 10px;
+  color: #f9ff00;
 }
 .sidebar .info {
   display: table;
   width: 100%;
   margin-top: 20px;
+  color: #00fff5;
 }
 .sidebar .info > * {
   display: table-cell;
   vertical-align: bottom;
 }
 .sidebar .info .content {
-  padding-left: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .sidebar .author {
   margin-top: 0.5em;
+  padding-right: 6px;
 }
 .sidebar .description {
-  font-size: 14px;
+  font-size: 15px;
 }
 .sidebar .avatar {
   width: 140px;
 }
 .sidebar .avatar img {
-  width: 120px;
+  width: 145px;
   height: 120px;
   border: 5px solid #d3d3d3;
   border-radius: 2px;
@@ -308,7 +314,7 @@ body {
 }
 .sidebar .nav > li > a:hover {
   background-color: #808080;
-  color: #fff;
+  color: #f9ff00;
   border-right: 5px solid #d3d3d3;
 }
 .sidebar .category-list,
@@ -349,7 +355,7 @@ body {
 .sidebar .archive-list .archive-list-item a {
   width: 80%;
   display: inline-block;
-  color: #86a87f;
+  color: #f9ff00;
 }
 .sidebar .category-list .category-list-item a:hover,
 .sidebar .tag-list .category-list-item a:hover,
@@ -392,7 +398,7 @@ body {
   display: inline-block;
   width: 20%;
   font-size: 12px;
-  color: #838383;
+  color: #00fff5;
   vertical-align: top;
 }
 @media screen and (max-width: 768px) {
@@ -461,10 +467,13 @@ body {
   font-size: 16px;
   line-height: 1.6em;
   text-align: justify;
+  color: #6f0;
 }
 .article .article-entry code {
   background-color: #f1f1f1;
   border-radius: 2px;
+  color: #30f;
+  font-weight: bold;
 }
 .article .article-entry blockquote {
   background: #f9f9f9;
