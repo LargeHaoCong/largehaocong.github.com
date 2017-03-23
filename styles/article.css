@@ -43,10 +43,13 @@
   font-size: 16px;
   line-height: line-height;
   text-align: justify;
+  color: #6f0;
 }
 .article .article-entry code {
   background-color: #f1f1f1;
   border-radius: 2px;
+  color: #30f;
+  font-weight: bold;
 }
 .article .article-entry blockquote {
   background: #f9f9f9;
